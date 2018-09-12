@@ -1,0 +1,124 @@
+.tags {
+    margin-top: 25px;
+}
+
+#most_popular_reviews > div > .tags > span {
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0.7px 0.7px 1px black;
+    margin: 25px -10px 5px 25px;
+    transition: 0.1s ease-in-out;
+}
+
+/* Remove if this causes issues */
+.tags > span {
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0.7px 0.7px 1px black;
+    margin: 25px -10px 5px 25px;
+    transition: 0.1s ease-in-out;
+}
+
+#most_popular_reviews > div > .tags > span:hover {
+    padding: 7px;
+}
+
+#funny {
+    background-color: #00b3b3;
+}
+
+#battle_royale {
+    background-color: #b30000;
+}
+
+#mmo {
+    background-color: #7AC74F;
+}
+
+#rpg {
+    background-color: #80CED7;
+}
+
+#mmorpg {
+    background-color: #3DD6D0;
+}
+
+#moba {
+    background-color: #FE4A49;
+}
+
+#first-person {
+    background-color: #F67E7D;
+}
+
+#horror {
+    background-color: #F52F57;
+}
+
+#strategy {
+    background-color: #68B0AB;
+}
+
+#rts {
+    background-color: #0C7C59;
+}
+
+#vr {
+    background-color: #A5FFD6;
+}
+
+#race {
+    background-color: #F0803C;
+}
+
+#puzzle {
+    background-color: #F5FF90;
+}
+
+#fantasy {
+    background-color: #A20021;
+}
+
+#shooter {
+    background-color: #7CDEDC;
+}
+
+#third-person {
+    background-color: #99ccff;  
+}
+
+#coop {
+    background-color: #048A81;
+}
+
+#survival {
+    background-color: #06D6A0;
+}
+
+#sandbox {
+    background-color: #2DE1C2;
+}
+
+#zombies {
+    background-color: #3DD6D0;
+}
+
+#pvp {
+    background-color: #4DA167;
+}
+
+#pve {
+    background-color: #FF6666;
+}
+
+#towerdefence {
+
+}
+
+#online {
+    background-color: #00cc99;
+}

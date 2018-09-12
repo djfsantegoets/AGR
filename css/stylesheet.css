@@ -1,0 +1,650 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+}
+
+input {
+    outline: none;
+}
+
+header {
+    width: 100%;
+    height: 350px;
+    border-bottom: solid 5px #262626;
+    box-shadow: inset 0px -11px 40px -10px black; 
+    margin-bottom: 130px;
+}
+
+#logo {
+    position: absolute;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#slider {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    z-index: -1;
+}
+
+#slide1, #slide2, #slide3, #slide4, #slide5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#slide1 {
+    background: url("../IMG/slide1.png")no-repeat center;
+    background-size: cover;
+    animation: fade 8s infinite;
+    -webkit-animation: fade 8s infinite;
+}
+
+#slide2 {
+    background: url("../IMG/slide2.jpg")no-repeat center;
+    background-size: cover;
+    animation: fade2 8s infinite;
+    -webkit-animation: fade2 8s infinite;
+}
+
+#slide3 {
+    background: url("../IMG/slide3.jpeg")no-repeat center;
+    background-size: cover;
+    animation: fade3 8s infinite;
+    -webkit-animation: fade3 8s infinite;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+li {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.2s ease-in;
+    border: solid 3px transparent;
+}
+
+li a:hover {
+    color:#d81f2a;
+}
+
+#login_avatar {
+    margin-top: 19.6px;
+    margin-right: -30px;    
+    height: 15px;
+    position: relative;
+    right: -10px;
+}
+
+#background_login_page {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../IMG/slide3.jpeg")
+}
+
+#background_registration_page {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../IMG/slide2.jpg")
+}
+
+.login_title {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+form {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+input[type=text] {
+    font-family: 'Roboto', sans-serif;
+    width: 350px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);    
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px 5px 0 0;
+    border: red;
+    transition: all 0.2s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+input[type=password] {
+    font-family: 'Roboto', sans-serif;
+    width: 350px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 0 0 5px 5px;
+    border: red;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=password]:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+input[type=submit] {
+    font-family: 'Roboto', sans-serif;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+input[type=reset] {
+    font-family: 'Roboto', sans-serif;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#password_input {
+    border-radius: 0 0 0 0;
+}
+
+.no_account_link, .already_have_acc_link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.a_no_account, .a_already_have_acc {
+    font-family: 'Roboto', sans-serif;
+    color: #CD0000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#most_popular_reviews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#most_popular_reviews > div {
+    flex-direction: row;
+    width: 600px;
+    height: 350px;
+    background-color: #333333;
+    margin: 50px;   
+    border-top: 5px solid #333333;
+    border-bottom: 5px solid #333333;
+    transition: 0.5s;
+    position: relative;
+}
+
+#most_popular_reviews > div:hover {
+    border-bottom: 5px solid #CD0000;
+    border-top: 5px solid #CD0000;
+    cursor: pointer;
+}
+
+#most_popular_reviews > div > .title_div {
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    position:relative;
+}
+
+#most_popular_reviews > div > .title_div  > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 1px 6px black;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+    font-weight: bolder;
+}
+
+#most_popular_reviews > div > .background_img {
+    width: 100%;
+    height: 340px;
+    position: absolute;
+    z-index: 0;
+}
+
+#most_popular_reviews > div > h3 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    padding: 7px 5px 5px 20px;
+    border-left: 5px #CD0000 solid;
+    background-color: rgba(0,0,0,0.6);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+    z-index: 1;
+    position:relative;
+}
+
+#most_popular_reviews > div > h3:hover {
+    animation-name: game-on-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#most_popular_reviews > div > a > span {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+.review_container {
+    width: 1100px;
+    height: 1000px;
+    background-color: rgba(0,0,0,0.3);
+    margin: 0 auto;
+    /* border-top: 5px solid #CD0000;
+    border-bottom: 5px solid #CD0000; */
+}
+
+.review_container > div > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 1px 6px black;
+    padding: 25px 0 25px 25px;
+    font-weight: bolder;
+}
+
+.review_container > div > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 1px 6px black;
+    padding: 25px 0 25px 25px;
+    font-weight: bolder;
+}
+
+.review_container > div > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 1px 6px black;
+    padding: 25px 0 25px 25px;
+    font-weight: bolder;
+}
+
+#about_us {
+    width: 100%;
+    /* height: 360px; */
+    background-color: rgba(0,0,0,0.3);
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+#about_us > h1 {
+    font-family: 'Share Tech', monospace;
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 75px;
+    padding: 10px 0 0 0;
+    text-shadow: 0 1px 1px black;
+}
+
+#about_us > p {
+    font-family: 'Share Tech', monospace;
+    font-size: 20px;
+    color: white;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 10px 0 0 0;
+    text-shadow: 0 1px 1px black;
+}
+
+#about_us > p > span {
+    color: #d81f2a;
+}
+
+#bio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+
+#bio > div {
+    flex-direction: row;
+    width: 480px;
+    height: 600px;
+    flex-grow: 1;
+}
+
+#bio_div1, #bio_div2, #bio_div3 {
+    background-color: #333333
+}
+
+#bio_div1 {
+    border-left: 2px solid #262626;
+}
+
+#bio_div2 {
+    border-left: 2px solid #262626;
+    border-right: 2px solid #262626;
+}
+
+#bio_div3 {
+    border-right: 2px solid #262626;
+}
+
+#bio > div > div {
+    width: 200px;
+    height: 200px;
+    background-image: url(../IMG/img1.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 70px;  
+    border: 3px solid #262626;
+}
+
+#bio > div > h3 {
+    font-family: 'Share Tech', monospace;
+    font-size: 25px;
+    color: white;
+    margin-top: 25px;
+}
+
+#bio > div > h5 {
+    font-family: 'Share Tech', monospace;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #d81f2a;
+    margin-bottom: 25px;
+}
+
+#bio > div > h4 {
+    font-family: 'Share Tech', monospace;
+    font-size: 20px;
+    color: white;
+}
+
+#bio > div > p {
+    font-family: 'Share Tech', monospace;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 400px;
+}
+
+#bio > div > p > span {
+    color: #d81f2a;
+}
+
+#bio > div > a {
+    font-family: 'Share Tech', monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: #CD0000;
+}
+
+#bio > div > a:hover {
+    color: #d81f2a;
+}
+
+#footer {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#footer > h3 {
+    font-family: 'Share Tech', monospace;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 75px;
+    padding-top: 70px;
+}
+
+#footer > p {
+    font-family: 'Share Tech', monospace;
+    font-size: 18px;
+    color: white;
+    width: 400px;
+    margin-left: 75px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#footer > a {
+    font-family: 'Share Tech', monospace;
+    text-decoration: none;
+    color: #CD0000;
+    margin-left: 75px;
+}
+
+#footer > a:hover {
+    border-bottom: 2px solid white;
+}
+
+@keyframes fade {
+    0%   {opacity:1;}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+}
+@keyframes fade2 {
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+}
+@keyframes fade3 {
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+}
+  
+@keyframes game-on-hover {
+    50% {
+        border-left: 18px solid red;
+    }
+    80% {
+        border-left: 13px solid red;
+    }
+    100% {
+        border-left: 15px solid red;
+    }
+}
+
+::placeholder {
+    color: white;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    
+    
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+   
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    #most_popular_reviews > div > .title_div  > h1 {
+        font-size: 35px;
+    }
+
+    nav {
+        list-style-type: none;
+        overflow: hidden;
+        float: bottom;
+        margin-top: 270px;
+        margin-right: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 560px) {
+    #most_popular_reviews > div {
+        flex-direction: row;
+        width: 600px;
+        height: 260px;
+        background-color: #333333;
+        margin: 50px;   
+        border-top: 5px solid #333333;
+        border-bottom: 5px solid #333333;
+        transition: 0.5s;
+        position: relative;
+    }
+
+    #most_popular_reviews > div > .background_img {
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        z-index: 0;
+    }
+
+    nav {
+        list-style-type: none;
+        overflow: hidden;
+        float: bottom;
+        margin-top: 270px;
+        margin-right: 15px;
+    }
+}
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #most_popular_reviews > div {
+        flex-direction: row;
+        width: 600px;
+        height: 240px;
+        background-color: #333333;
+        margin: 50px;   
+        border-top: 5px solid #333333;
+        border-bottom: 5px solid #333333;
+        transition: 0.5s;
+        position: relative;
+    }
+
+    #most_popular_reviews > div > .background_img {
+        width: 100%;
+        height: 230px;
+        position: absolute;
+        z-index: 0;
+    }
+    
+    #most_popular_reviews > div > .title_div  > h1 {
+        font-size: 30px;
+    }
+
+    #logo {
+        margin-left: 50px;
+    }
+
+    nav {
+        list-style-type: none;
+        overflow: hidden;
+        float: bottom;
+        margin-top: 270px;
+        margin-right: 15px;
+    }
+    
+}
